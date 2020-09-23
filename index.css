@@ -1,0 +1,136 @@
+body {
+    background-color: rgb(253, 246, 209);
+}
+
+h1,h2 {
+    margin: 0;
+    padding: 5px;
+}
+
+.container {
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    background-color: rgb(255, 254, 247);
+}
+
+#time{
+    font-size: 1.5em;
+    background-color: blanchedalmond;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.toDoWrapper {
+    background-color: blanchedalmond;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.listWrapper {
+    display: block;
+    /* padding: 10px 10px; */
+    text-align: left;
+    letter-spacing: -1em; /* 文字間を詰める */
+    /* white-space: nowrap; 自動で折り返ししない */
+}
+
+.notChecked {
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    letter-spacing: normal; /* 文字間を元に戻す */
+    border: 1px solid rgb(255, 254, 247);
+    box-sizing: border-box;
+    background-color: rgb(148, 80, 16);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.notChecked:hover {
+    background-color: rgba(148, 80, 16, 0.8);
+}
+
+.checked {
+    border: 1px solid  rgb(61, 39, 14);
+    background-color: rgb(236, 161, 91);
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    letter-spacing: normal; /* 文字間を元に戻す */
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.checked:hover {
+    background-color: rgba(236, 161, 91, 0.8);
+}
+
+#addToDo {
+    width: 70%;
+    padding: 10px 15px; /*ボックスを大きくする*/
+    font-size: 16px;
+    border-radius: 3px; /*ボックス角の丸み*/
+    border: 2px solid #ddd; /*枠線*/
+    box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+}
+
+#addToDo:focus {
+    border: 2px solid #ff990096; 
+    z-index: 10;
+    outline: 0;
+}
+
+.btnWrapper {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn {
+    width: 20%;
+    height:35px;
+    line-height: 35px;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(58, 14, 14);
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(187, 187, 187);
+}
+
+@media (max-width: 670px) {
+    .notChecked {
+        width: 50%;
+    }
+    .checked:hover {
+        background-color: rgb(236, 161, 91);
+    }
+        
+    .checked {
+        width: 50%;
+    }
+
+    .checked:hover {
+        background-color: rgb(236, 161, 91);
+    }
+
+    .container {
+        width: 100%;
+    }
+    .btn {
+        width: 50%;
+    }
+}

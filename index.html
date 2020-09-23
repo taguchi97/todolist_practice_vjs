@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist_practice</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="index.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>今日中にやること</h1>
+        <div id="time">
+            <!-- タイマーのhtml -->
+        </div>
+
+        <p>
+            <input type="text" id="addToDo">
+            <input class="btn" type="button" id="addBtn" value="追加" onclick="addToDo()">
+        </p>
+        <div class="toDoWrapper">
+            <h2>今日はこれをやります。</h2>
+            <div class="listWrapper" id="toDo">
+                <div class="checked" onClick="toggleClass(event)">test1</div>
+                <div class="notChecked" onClick="toggleClass(event)">test2</div>
+                <div class="checked" onClick="toggleClass(event)">test3</div>
+                <div class="notChecked" onClick="toggleClass(event)">test4</div>
+            </div>
+        </div>
+
+        <div class="btnWrapper">
+            <div class="btn" id="compBtn" onclick="complete()">
+                <i class="fa fas fa-arrow-circle-down"></i> 完了
+            </div>
+            <div class="btn" id="backBtn" onclick="back()">
+                <i class="fa fas fa-arrow-circle-up"></i> 戻す
+            </div>
+        </div>
+
+        <div class="toDoWrapper">
+            <h2>完了済リスト</h2>
+            <div class="listWrapper" id="comp">
+            </div>
+        </div>
+        <div class="btnWrapper">
+            <div class="btn" id="delToDo" onclick="delToDo()">
+                <i class="fa fas fa-trash-alt"></i> 削除
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
