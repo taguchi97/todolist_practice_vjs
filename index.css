@@ -19,6 +19,7 @@ h1,h2 {
     background-color: blanchedalmond;
     width: 90%;
     margin: 0 auto;
+    padding-bottom: ;
 }
 
 .toDoWrapper {
@@ -73,8 +74,9 @@ h1,h2 {
 }
 
 #addToDo {
-    width: 70%;
+    width: 90%;
     padding: 10px 15px; /*ボックスを大きくする*/
+    margin-bottom: 10px;
     font-size: 16px;
     border-radius: 3px; /*ボックス角の丸み*/
     border: 2px solid #ddd; /*枠線*/
@@ -103,7 +105,7 @@ h1,h2 {
     color: rgb(58, 14, 14);
     background-color: rgb(236, 236, 236);
     border: 1px solid rgba(0, 0, 0, 0.3);
-    margin-right: 10px;
+    margin: 0 5px;
     border-radius: 5px;
 }
 
@@ -131,6 +133,6 @@ h1,h2 {
         width: 100%;
     }
     .btn {
-        width: 50%;
+        width: 45%;
     }
 }
